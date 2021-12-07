@@ -15,7 +15,7 @@ export const addReview = (doctorId, formData) => async dispatch => {
         }
     };
     try {
-        const res = await axios.post(`/api/profile/doctor/${doctorId}`, formData, config);
+        const res = await axios.post(`https://doctorappointmentappp.herokuapp.com/api/profile/doctor/${doctorId}`, formData, config);
         
         dispatch({
             type: ADD_REVIEW,
@@ -34,7 +34,7 @@ export const addReview = (doctorId, formData) => async dispatch => {
 // Delete Review
 export const deleteReview = (doctorId, reviewId) => async dispatch => {
     try {
-        await axios.delete(`/api/profile/doctor/${doctorId}/${reviewId}`);
+        await axios.delete(`https://doctorappointmentappp.herokuapp.com/api/profile/doctor/${doctorId}/${reviewId}`);
         dispatch({
             type: REMOVE_REVIEW,
             payload: reviewId

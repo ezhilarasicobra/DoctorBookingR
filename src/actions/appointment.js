@@ -12,7 +12,7 @@ import {
 // Get Appointments
 export const getAppointments = () => async dispatch => {
     try {
-        const res = await axios.get('/api/authUser');
+        const res = await axios.get('https://doctorappointmentappp.herokuapp.com/api/authUser');
         dispatch({
             type: GET_APPOINTMENTS,
             payload: res.data
@@ -34,7 +34,7 @@ export const addAppointment = (doctorId, formData, history) => async dispatch =>
         }
     };
     try {
-        const res = await axios.post(`/api/appointment/${doctorId}`,formData, config);
+        const res = await axios.post(`https://doctorappointmentappp.herokuapp.com/api/appointment/${doctorId}`,formData, config);
         dispatch({
             type: ADD_APPOINTMENTS,
             payload: res.data
@@ -54,7 +54,7 @@ export const addAppointment = (doctorId, formData, history) => async dispatch =>
 // Delete appointment
 export const deleteAppointment = (appointmentId) => async dispatch => {
     try {
-        const res = await axios.delete(`/api/authUser/${appointmentId}`);
+        const res = await axios.delete(`https://doctorappointmentappp.herokuapp.com/api/authUser/${appointmentId}`);
         dispatch({
             type: UPDATE_APPOINTMENTS,
             payload: res.data
@@ -73,7 +73,7 @@ export const deleteAppointment = (appointmentId) => async dispatch => {
 export const deleteAccountUser = () => async dispatch => {
     if(window.confirm('Are you sure? this can not be undone!')) {
         try {
-            await axios.delete('/api/authUser');
+            await axios.delete('https://doctorappointmentappp.herokuapp.com/api/authUser');
 
             dispatch({
                 type: DELETE_USER_ACCOUNT

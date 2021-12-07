@@ -17,7 +17,7 @@ import {
 // Get current doctors profile
 export const getCurrentProfile = () => async dispatch => {
     try {
-        const res = await axios.get('/api/profile/me');
+        const res = await axios.get('https://doctorappointmentappp.herokuapp.com/api/profile/me');
         dispatch({
             type: GET_PROFILE,
             payload: res.data
@@ -33,7 +33,7 @@ export const getCurrentProfile = () => async dispatch => {
 // Get all profiles
 export const getProfiles = () => async dispatch => {
     try {
-        const res = await axios.get('/api/profile');
+        const res = await axios.get('https://doctorappointmentappp.herokuapp.com/api/profile');
 
         dispatch({
             type: GET_PROFILES,
@@ -50,7 +50,7 @@ export const getProfiles = () => async dispatch => {
 // Get profiles by doctor id
 export const getProfileById = doctorId => async dispatch => {
     try {
-        const res = await axios.get(`/api/profile/doctor/${doctorId}`);        
+        const res = await axios.get(`https://doctorappointmentappp.herokuapp.com/api/profile/doctor/${doctorId}`);        
         dispatch({
             type: GET_PROFILE_BY_ID,
             payload: res.data
@@ -71,7 +71,7 @@ export const createProfile = (formData, history, edit=false) => async dispatch =
                 'Content-Type': 'application/json'
             }
         }
-        const res = await axios.post('api/profile', formData, config);
+        const res = await axios.post('https://doctorappointmentappp.herokuapp.com/api/profile', formData, config);
         dispatch({
             type: GET_PROFILE,
             payload: res.data
@@ -102,7 +102,7 @@ export const addExperience = (formData, history) => async dispatch => {
                 'Content-Type': 'application/json'
             }
         }
-        const res = await axios.put('api/profile/experience', formData, config);
+        const res = await axios.put('https://doctorappointmentappp.herokuapp.com/api/profile/experience', formData, config);
         dispatch({
             type: UPDATE_PROFILE,
             payload: res.data
@@ -129,7 +129,7 @@ export const addEducation = (formData, history) => async dispatch => {
                 'Content-Type': 'application/json'
             }
         }
-        const res = await axios.put('api/profile/education', formData, config);
+        const res = await axios.put('https://doctorappointmentappp.herokuapp.com/api/profile/education', formData, config);
         dispatch({
             type: UPDATE_PROFILE,
             payload: res.data
@@ -154,7 +154,7 @@ export const addEducation = (formData, history) => async dispatch => {
 // Delete experience
 export const deleteExperience = exp_id => async dispatch => {
     try {
-        const res = await axios.delete(`api/profile/experience/${exp_id}`);
+        const res = await axios.delete(`https://doctorappointmentappp.herokuapp.com/api/profile/experience/${exp_id}`);
         dispatch({
             type: UPDATE_PROFILE,
             payload: res.data
@@ -170,7 +170,7 @@ export const deleteExperience = exp_id => async dispatch => {
 // Delete education
 export const deleteEducation = edu_id => async dispatch => {
     try {
-        const res = await axios.delete(`api/profile/education/${edu_id}`);
+        const res = await axios.delete(`https://doctorappointmentappp.herokuapp.com/api/profile/education/${edu_id}`);
         dispatch({
             type: UPDATE_PROFILE,
             payload: res.data
@@ -192,7 +192,7 @@ export const addReview = (doctorId, formData) => async dispatch => {
         }
     };
     try {
-        const res = await axios.post(`/api/profile/doctor/:${doctorId}`, formData, config);
+        const res = await axios.post(`https://doctorappointmentappp.herokuapp.com/api/profile/doctor/:${doctorId}`, formData, config);
         dispatch({
             type: ADD_REVIEW,
             payload: res.data
@@ -210,7 +210,7 @@ export const addReview = (doctorId, formData) => async dispatch => {
 // Delete Review
 export const deleteReview = (doctorId, reviewId) => async dispatch => {
     try {
-         await axios.delete(`/api/profile/doctor/${doctorId}/${reviewId}`);
+         await axios.delete(`https://doctorappointmentappp.herokuapp.com/api/profile/doctor/${doctorId}/${reviewId}`);
         
         dispatch({
             type: REMOVE_REVIEW,
@@ -230,7 +230,7 @@ export const deleteReview = (doctorId, reviewId) => async dispatch => {
 export const deleteAccount = () => async dispatch => {
     if(window.confirm('Are you sure? this can not be undone!')) {
         try {
-            await axios.delete('/api/profile');
+            await axios.delete('https://doctorappointmentappp.herokuapp.com/api/profile');
     
             dispatch({
                 type: CLEAR_PROFILE

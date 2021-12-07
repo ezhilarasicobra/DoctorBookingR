@@ -19,7 +19,7 @@ export const loadDoctor = () => async dispatch => {
     }
 
     try {
-        const res = await axios.get('/api/authDoctor');
+        const res = await axios.get('https://doctorappointmentappp.herokuapp.com/api/authDoctor');
 
         dispatch({
             type: DOCTOR_LOADED,
@@ -41,7 +41,7 @@ export const register = ({ name, email, password }) => async dispatch => {
     }
     const body = JSON.stringify({ name, email, password });
     try {
-        const res = await axios.post('/api/doctors', body, config);
+        const res = await axios.post('https://doctorappointmentappp.herokuapp.com/api/doctors', body, config);
         console.log(res);
         
         dispatch({
@@ -70,7 +70,7 @@ export const login = (email, password) => async (dispatch) => {
     }
     const body = JSON.stringify({ email, password });
     try {
-        const res = await axios.post('/api/authDoctor', body, config);
+        const res = await axios.post('https://doctorappointmentappp.herokuapp.com/api/authDoctor', body, config);
         
         dispatch({
             type: LOGIN_DOCTOR_SUCCESS,
