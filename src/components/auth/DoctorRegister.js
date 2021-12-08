@@ -53,7 +53,7 @@ const DoctorRegister = ({ setAlert, register, isDoctorAuthenticated }) => {
                                     value={email}
                                     onChange={e => onChange(e)}
                                 />
-                                <small id="emailHelp" className="form-text text-muted">This site uses <a href="https://en.gravatar.com/" target="_blank" rel="noopener noreferrer">Gravatar </a> so if you want a profile image, use a Gravatar email</small>
+                                
                                 </div>
                                 <div className="form-group">
                                 <label className="label" for="exampleInputEmail1">Full Name</label>
