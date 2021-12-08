@@ -17,7 +17,7 @@ const Navbar = (
         const authUserLinks = (
             <Fragment>
                 <Link className="nav-logo" to="/appointment">
-                Cure<img className="nav-log-img" style={{width: "3.2rem"}} src={require("./doctor (1).png")} />       
+                Find Your Doctor<img className="nav-log-img" style={{width: "3.2rem",marginLeft:"10px"}} src={require("./doct.jpeg")} />       
                 </Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -45,7 +45,7 @@ const Navbar = (
         const authDoctorLinks = (
             <Fragment>
                 <Link className="nav-logo" to="/dashboard">
-                Cure<img className="nav-log-img" style={{width: "3.2rem"}} src={require("./doctor (1).png")} />       
+                Find Your Doctor<img className="nav-log-img" style={{width: "3.2rem" ,marginLeft:"10px"}} src={require("./doct.jpeg")} />       
                 </Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -82,7 +82,7 @@ const Navbar = (
         const guestLinks = (
             <Fragment>
                 <Link className="nav-logo" to="/">
-                    Cure<img className="nav-log-img" style={{width: "3.2rem"}} src={require("./doctor (1).png")} />       
+                Find Your Doctor<img className="nav-log-img" style={{width: "3.2rem",marginLeft:"10px"}} src={require("./doct.jpeg")} />       
                 </Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
