@@ -11,7 +11,7 @@ const PrivateDoctorRoute = ({component: Component,
             {...rest}
             render = {props =>     
                 !isDoctorAuthenticated && !loadingDoctor ? (
-                    <Redirect to="/loginDoctor" />
+                    <Redirect to="/" />
                 ) : (
                     <Component {...props} />
                 )
