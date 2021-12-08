@@ -41,7 +41,7 @@ export const register = ({ name, email, password }) => async dispatch => {
     }
     const body = JSON.stringify({ name, email, password });
     try {
-        const res = await axios.post('https://doctorappointmentappp.herokuapp.com./api/users', body, config);
+        const res = await axios.post('https://doctorappointmentappp.herokuapp.com/api/users', body, config);
 
         dispatch({
             type: REGISTER_USER_SUCCESS,
