@@ -20,7 +20,7 @@ const LoginUser = ({ login, isUserAuthenticated }) => {
         login(email,password);
     }
 
-    // Redirect if login
+    // Redirect if login is successfull --enter user 
     if(isUserAuthenticated) {
         return <Redirect to="/" />
     }
@@ -48,7 +48,7 @@ const LoginUser = ({ login, isUserAuthenticated }) => {
                                     onChange={e => onChange(e)}
                                     required
                                 />
-                                <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+                                <small id="emailHelp" className="form-text text-muted">Your email is secure with us. Dont Worry!!!</small>
                                 </div>
                                 <div className="form-group">
                                 <label className="label" for="exampleInputPassword1">Password</label>

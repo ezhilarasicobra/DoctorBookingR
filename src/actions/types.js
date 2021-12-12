@@ -1,7 +1,7 @@
 export const SET_ALERT = 'SET_ALERT';
 export const REMOVE_ALERT = 'REMOVE_ALERT';
 
-// Doctor action types
+// exclusive to doctor ==== action types
 export const REGISTER_DOCTOR_SUCCESS = 'REGISTER_DOCTOR_SUCCESS';
 export const REGISTER_DOCTOR_FAIL = 'REGISTER_DOCTOR_FAIL';
 export const DOCTOR_LOADED = 'DOCTOR_LOADED';
@@ -17,7 +17,7 @@ export const CLEAR_PROFILE = 'CLEAR_PROFILE';
 export const PROFILE_ERROR = 'PROFILE_ERROR';
 export const DELETE_ACCOUNT = 'DELETE_ACCOUNT';
 
-// User action types
+// exclusive to user  ==== action types
 export const REGISTER_USER_SUCCESS = 'REGISTER_USER_SUCCESS';
 export const REGISTER_USER_FAIL = 'REGISTER_USER_FAIL';
 export const USER_LOADED = 'USER_LOADED';

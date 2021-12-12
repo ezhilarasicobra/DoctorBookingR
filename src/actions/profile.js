@@ -34,7 +34,7 @@ export const getCurrentProfile = () => async dispatch => {
 export const getProfiles = () => async dispatch => {
     try {
         const res = await axios.get('https://doctorappointmentappp.herokuapp.com/api/profile');
-
+console.log(res.data)
         dispatch({
             type: GET_PROFILES,
             payload: res.data
@@ -72,6 +72,7 @@ export const createProfile = (formData, history, edit=false) => async dispatch =
             }
         }
         const res = await axios.post('https://doctorappointmentappp.herokuapp.com/api/profile', formData, config);
+        
         dispatch({
             type: GET_PROFILE,
             payload: res.data

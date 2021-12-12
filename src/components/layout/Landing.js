@@ -23,19 +23,19 @@ const Landing = ({isDoctorAuthenticated, isUserAuthenticated}) => {
                     <div className="signup">
                         <div className="doctor-signup">
                             <h2 className=" item heading-sub"><strong>For Doctors</strong></h2>
-                            <p className="item description">Welcome Doctors !!!, to our Application. For our Services kindly register with your profile Deatils.</p>
+                            <p className="item description">Welcome Doctors !!!, to our Application. For our Services kindly register with your profile Details.</p>
                             <Link to="/registerDoctor" type="button" className="item btn btn-info">Sign Up</Link>
                         </div>
                         <div className="user-signup">
                             <h2 className="item heading-sub"><strong>For Users</strong></h2>
-                            <p className="item special description">Welcome Users!! Hapy to have you onboard. Kindly register and book your appointment with us.</p>
+                            <p className="item special description">Welcome Users !! Happy to have you onboard. Kindly register and book your appointment with us.</p>
                             <Link to="/registerUser" className="item btn btn-outline-info">Sign Up</Link>
                         </div>
                     </div>
                     <br />
                     <div className="img">
                         <div className="img-1">
-                            <img src={require("../../img/undraw_doctor_kw5l.svg")}  />
+                            <img src={require("../../img/front.svg")} style={{height:"400px"}} />
                         </div>
                     </div>
                 </div>

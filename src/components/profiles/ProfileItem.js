@@ -16,7 +16,7 @@ const ProfileItem = ({
 }) => {
     
     return (
-        <div classNameName="profiles">
+        <div className="profiles">
             <div className="profile-1">
                     <div className="profile-img">
                         <img src={avatar} alt="" />

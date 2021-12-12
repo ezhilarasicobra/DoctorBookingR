@@ -53,11 +53,13 @@ const App = () => {
               <Route exact path='/registerUser' component={UserRegister} />
               <Route exact path='/profiles' component={Profiles} />
               <Route exact path='/doctor/:id' component={Profile} />
+            {/* exclusive to doctorss */}
               <PrivateDoctorRoute exact path='/dashboard' component={Dashboard} />
               <PrivateDoctorRoute exact path='/add-education' component={AddEducation} />
               <PrivateDoctorRoute exact path='/add-experience' component={AddExperience} />
               <PrivateDoctorRoute exact path='/create-profile' component={CreateProfile} />
               <PrivateDoctorRoute exact path='/edit-profile' component={EditProfile} />
+              {/* exclusive to users */}
               <PrivateUserRoute   exact path='/appointment' component={Appointment} />
               <PrivateUserRoute   exact path='/appointment/:id' component={AppointmentForm} />
             </Switch>
