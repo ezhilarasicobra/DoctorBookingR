@@ -92,7 +92,7 @@ const DoctorRegister = ({ setAlert, register, isDoctorAuthenticated }) => {
                             </form>
                         </div>
                         <div className="img-side">
-                            <img className="register-user" src={require("../../img/newDoctor1.svg")} alt="" />
+                            <img className="register-user" src={require("../../img/docreg.svg")} alt="" style={{height:"450px"}} />
                         </div>
                     </div>
                 </div>

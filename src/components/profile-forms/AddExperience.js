@@ -110,7 +110,7 @@ const AddExperience = ({addExperience, history}) => {
                                 <br />
                             </div>
                             <div className="img-side">
-                                <img className="register-user" src={require("../../img/undraw_medical_research_qg4d.svg")} alt="" />
+                                <img className="register-user" src={require("../../img/stethoscope.png")} alt="" style={{height:"400px"}} />
                             </div>
                         </div>
                     </div>

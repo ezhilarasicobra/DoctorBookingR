@@ -68,7 +68,7 @@ const LoginDoctor = ({ login, isDoctorAuthenticated }) => {
                             </form>
                         </div>
                         <div className="img-side">
-                            <img src={require("../../img/doctor8.svg")} alt="" className="register-user" />
+                            <img src={require("../../img/logindoc.svg")} alt="" className="register-user" />
                         </div>
                     </div>
                 </div>

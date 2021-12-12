@@ -111,7 +111,7 @@ const AddEducation = ({addEducation, history}) => {
                                 <br />
                             </div>
                             <div className="img-side">
-                                <img src={require("../../img/graduation.svg")} alt="" className="register-user" />
+                                <img src={require("../../img/education.svg")} alt="" className="register-user" />
                             </div>
                         </div>
                     </div>

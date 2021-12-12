@@ -68,7 +68,7 @@ const LoginUser = ({ login, isUserAuthenticated }) => {
                             </form>
                         </div>
                         <div className="img-side">
-                            <img src={require("../../img/coughing_2.svg")} alt="" className="register-user" />
+                            <img src={require("../../img/userlog.svg")} alt="" className="register-user" />
                         </div>
                     </div>
                 </div>
